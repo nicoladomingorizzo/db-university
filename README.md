@@ -32,6 +32,10 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 
 - id
 - address_department
+- name
+- address
+- email
+- phone
 
 #### courses (secondary)
 
