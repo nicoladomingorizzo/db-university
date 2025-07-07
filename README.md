@@ -81,12 +81,12 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 ### pivot: detail_exam
 
 - id
-- student_id
 - exam_id
+- student_id
 - vote
 
 
-### student_vote (secondary)
+### pivot: student_vote
 
 - id
 - student_id
