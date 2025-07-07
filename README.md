@@ -83,6 +83,7 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - id
 - student_id
 - exam_id
+- vote
 
 
 ### student_vote (secondary)
