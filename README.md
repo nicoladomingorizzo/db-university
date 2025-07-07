@@ -19,16 +19,13 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - teacher
 - exam
 - student
-- vote
 
 ## Tables
 
 - deparments
-- courses
 - teachers
 - exams
 - students
-- votes
 
 ### departments
 
@@ -41,7 +38,7 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - department_id
 - address_course
 
-### pivot: detail_course
+##### detail_course
 
 - id
 - course_id
@@ -71,12 +68,6 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - name
 - lastname
 
-### pivot: detail_exam
-
-- id
-- student_id
-- exam_id
-
 #### detail_student
 
 - id
@@ -86,7 +77,14 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - email
 - courses
 
-### pivot : detail_student_vote
+### pivot: detail_exam
+
+- id
+- student_id
+- exam_id
+
+
+### student_vote
 
 - id
 - student_id
