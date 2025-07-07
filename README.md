@@ -15,7 +15,7 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 
 ## Entity
 - deparment
-- course
+~~- course~~
 - teacher
 - exam
 - student
@@ -24,6 +24,7 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 
 - deparments
 - teachers
+~~- courses~~
 - exams
 - students
 
