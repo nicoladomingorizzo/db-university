@@ -28,48 +28,48 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - exams
 - students
 
-### departments
+### departments (primary)
 
 - id
 - address_department
 
-#### courses
+#### courses (secondary)
 
 - id
 - department_id
 - address_course
 
-##### detail_course
+##### detail_course (secondary+)
 
 - id
 - course_id
 - address_detail_course
 
-### teachers
+### teachers (primary)
 
 - id
 - name
 - lastname
 
-#### detail_teacher
+#### detail_teacher (secondary)
 
 - id
 - teacher_id
 - role
 - subject
 
-### exams
+### exams (primary)
 
 - id
 - name
 
-### students
+### students (primary)
 
 - id
 - name
 - lastname
 
-#### detail_student
+#### detail_student (secondary)
 
 - id
 - student_id
@@ -85,7 +85,7 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - exam_id
 
 
-### student_vote
+### student_vote (secondary)
 
 - id
 - student_id
