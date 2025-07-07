@@ -95,4 +95,4 @@ Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe 
 - id
 - student_id
 - course_id
-- vote
+- average_vote
