@@ -41,7 +41,7 @@ AND `hour` >= '14:00:00'
 
 SELECT *
 FROM `degrees`
-WHERE `level` LIKE 'magistrale'
+WHERE `level` = 'magistrale'
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
