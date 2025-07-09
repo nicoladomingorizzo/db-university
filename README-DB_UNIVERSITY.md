@@ -15,7 +15,7 @@ WHERE `cfu` > 10
 
 <!-- SELECT *
 FROM `students`
-where `date_of_birth` <= '1975-08-08' -->
+where `date_of_birth` <= '1995-08-08' -->
 SELECT *
 FROM `students`
 WHERE `date_of_birth` <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
@@ -34,7 +34,7 @@ AND `period` = 'I semestre'
 
 SELECT *
 FROM `exams`
-WHERE `date` LIKE '2020-06-20'
+WHERE `date` = '2020-06-20'
 AND `hour` >= '14:00:00'
 
 6. Selezionare tutti i corsi di laurea magistrale (38)
@@ -45,7 +45,7 @@ WHERE `level` = 'magistrale'
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
-SELECT COUNT(id)
+SELECT COUNT(*) AS `number_of_departments`
 FROM `departments`
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
@@ -56,6 +56,26 @@ FROM `teachers`
 WHERE `phone` IS NULL
 
 <!-- Visualizzi solo il conteggio -->
-SELECT COUNT(id)
+SELECT COUNT(*) AS `number_of_teacher_without_phone`
 FROM `teachers`
 WHERE `phone` IS NULL
+
+<!-- GROUP BY QUERY -->
+
+<!--
+SELECT COUNT(*) AS `total_courses`, `cfu`
+FROM `courses`
+GROUP BY `cfu`
+-->
+
+ <!--
+ SELECT COUNT(*) AS `total_students`, YEAR(`date_of_birth`) AS `year_of_birth`
+FROM `students`
+GROUP BY `year_of_birth`
+-->
+
+<!--
+SELECT MIN(`VOTE`) AS `lowest_vote`, `exam_id``
+FROM `exam_student`
+GROUP BY `exam_id`
+-->
