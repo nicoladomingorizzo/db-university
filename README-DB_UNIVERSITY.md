@@ -60,22 +60,3 @@ SELECT COUNT(*) AS `number_of_teacher_without_phone`
 FROM `teachers`
 WHERE `phone` IS NULL
 
-<!-- GROUP BY QUERY -->
-
-<!--
-SELECT COUNT(*) AS `total_courses`, `cfu`
-FROM `courses`
-GROUP BY `cfu`
--->
-
- <!--
- SELECT COUNT(*) AS `total_students`, YEAR(`date_of_birth`) AS `year_of_birth`
-FROM `students`
-GROUP BY `year_of_birth`
--->
-
-<!--
-SELECT MIN(`VOTE`) AS `lowest_vote`, `exam_id``
-FROM `exam_student`
-GROUP BY `exam_id`
--->
